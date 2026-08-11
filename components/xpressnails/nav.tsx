@@ -34,8 +34,8 @@ export function Nav() {
         }`}
       >
         <Container className="flex items-center justify-between py-5">
-          <Link href="/" className="font-sans text-sm font-medium uppercase tracking-wide3 text-charcoal">
-            Xpress <span className="font-serif italic normal-case tracking-normal">Spa &amp; Nails</span>
+          <Link href="/" className="font-sans text-xl font-medium uppercase tracking-wide3 text-charcoal">
+            Xpress Spa &amp; Nails
           </Link>
 
           <nav className="hidden items-center gap-10 md:flex">

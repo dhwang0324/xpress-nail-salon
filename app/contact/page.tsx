@@ -5,7 +5,9 @@ import { Container } from "@/components/ui/container";
 import { FadeIn } from "@/components/ui/fade-in";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { ContactForm } from "@/components/xpressnails/contact/contact-form";
-import { MapPlaceholder } from "@/components/xpressnails/contact/map-placeholder";
+import { StoreMap } from "@/components/xpressnails/contact/store-map";
+
+const ADDRESS = "3605 Sandy Plains Rd, Marietta, GA 30066";
 
 export const metadata: Metadata = {
   title: "Contact | Xpress Spa & Nails",
@@ -42,44 +44,34 @@ export default function ContactPage() {
               <div>
                 <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Hours</p>
                 <ul className="mt-3 space-y-1.5 text-sm font-light text-charcoal/70">
-                  <li>Monday &ndash; Friday, 10am &ndash; 7pm</li>
-                  <li>Saturday, 10am &ndash; 6pm</li>
-                  <li>Sunday, 11am &ndash; 5pm</li>
+                  <li>Monday &ndash; Saturday, 10am &ndash; 7pm</li>
+                  <li>Sunday, 12pm &ndash; 6pm</li>
                 </ul>
               </div>
 
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Phone</p>
-                  <a href="tel:+10000000000" className="mt-3 block text-sm font-light text-charcoal/70 hover:text-charcoal">
-                    (000) 000-0000
-                  </a>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Email</p>
-                  <a href="mailto:hello@xpressspanails.com" className="mt-3 block text-sm font-light text-charcoal/70 hover:text-charcoal">
-                    hello@xpressspanails.com
-                  </a>
-                </div>
+              <div>
+                <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Phone</p>
+                <a href="tel:+17705780078" className="mt-3 block text-sm font-light text-charcoal/70 hover:text-charcoal">
+                  (770) 578-0078
+                </a>
               </div>
 
               <div>
                 <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Address</p>
                 <p className="mt-3 text-sm font-light text-charcoal/70">
-                  100 Main Street, Suite 2<br />
-                  Woodstock, GA 30188
+                  {ADDRESS}
                 </p>
               </div>
 
               <div>
                 <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Social</p>
                 <div className="mt-3 flex gap-6 text-sm font-light text-charcoal/70">
-                  <a href="#" className="hover:text-charcoal">Instagram</a>
-                  <a href="#" className="hover:text-charcoal">Facebook</a>
+                  <a href="https://www.instagram.com/nailxpressmarietta/" target="_blank" rel="noopener noreferrer" className="hover:text-charcoal">Instagram</a>
+                  <a href="https://www.facebook.com/NailXpressMarietta" target="_blank" rel="noopener noreferrer" className="hover:text-charcoal">Facebook</a>
                 </div>
               </div>
 
-              <MapPlaceholder />
+              <StoreMap address={ADDRESS} />
             </FadeIn>
           </Container>
         </section>
@@ -90,6 +82,8 @@ export default function ContactPage() {
               <ImagePlaceholder
                 label="Lifestyle Photography"
                 sublabel="Studio entrance or reception, wide format"
+                src="/media/contact-storefront.jpg"
+                alt="Xpress Spa & Nails storefront"
                 aspect="aspect-[21/9]"
                 tone="beige"
                 rounded="rounded-[2rem]"

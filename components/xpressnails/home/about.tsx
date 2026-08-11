@@ -11,6 +11,8 @@ export function About() {
           <ImagePlaceholder
             label="Interior Salon Image"
             sublabel="Wide shot of the studio, natural light preferred"
+            src="/media/home-about-interior.jpg"
+            alt="Nail technician caring for a client's hands at Xpress Spa & Nails"
             aspect="aspect-[4/5]"
             tone="stone"
           />

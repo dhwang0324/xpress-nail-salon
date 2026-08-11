@@ -17,6 +17,8 @@ export function Hero() {
         <ImagePlaceholder
           label="Hero Image Placeholder"
           sublabel="Full-bleed salon / hands photography, 16:9 or taller"
+          src="/media/home-hero-nails-closeup.jpg"
+          alt="Close-up of a manicured hand with neutral nail polish"
           aspect="aspect-auto h-full"
           rounded="rounded-none"
           tone="beige"
@@ -32,7 +34,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="font-serif text-lg italic text-warm-white/80"
         >
-          Woodstock&rsquo;s quiet luxury
+          Marietta&rsquo;s quiet luxury
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 24 }}

@@ -6,8 +6,8 @@ export function Footer() {
     <footer className="border-t border-charcoal/10 bg-cream">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-sans text-sm font-medium uppercase tracking-wide3">
-            Xpress <span className="font-serif italic normal-case tracking-normal">Spa &amp; Nails</span>
+          <p className="font-sans text-xl font-medium uppercase tracking-wide3">
+            Xpress Spa &amp; Nails
           </p>
           <p className="mt-4 max-w-xs text-sm font-light leading-relaxed text-charcoal/55">
             A quiet, considered space for hands and feet — nail care treated as ritual, not routine.
@@ -26,19 +26,17 @@ export function Footer() {
         <div>
           <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Hours</p>
           <ul className="mt-4 space-y-2.5 text-sm text-charcoal/65">
-            <li>Mon &ndash; Fri, 10am &ndash; 7pm</li>
-            <li>Saturday, 10am &ndash; 6pm</li>
-            <li>Sunday, 11am &ndash; 5pm</li>
+            <li>Mon &ndash; Sat, 10am &ndash; 7pm</li>
+            <li>Sunday, 12pm &ndash; 6pm</li>
           </ul>
         </div>
 
         <div>
           <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Connect</p>
           <ul className="mt-4 space-y-2.5 text-sm text-charcoal/65">
-            <li><a href="tel:+10000000000" className="hover:text-charcoal">(000) 000-0000</a></li>
-            <li><a href="mailto:hello@xpressspanails.com" className="hover:text-charcoal">hello@xpressspanails.com</a></li>
-            <li><a href="#" className="hover:text-charcoal">Instagram</a></li>
-            <li><a href="#" className="hover:text-charcoal">Facebook</a></li>
+            <li><a href="tel:+17705780078" className="hover:text-charcoal">(770) 578-0078</a></li>
+            <li><a href="https://www.instagram.com/nailxpressmarietta/" target="_blank" rel="noopener noreferrer" className="hover:text-charcoal">Instagram</a></li>
+            <li><a href="https://www.facebook.com/NailXpressMarietta" target="_blank" rel="noopener noreferrer" className="hover:text-charcoal">Facebook</a></li>
           </ul>
         </div>
       </Container>
