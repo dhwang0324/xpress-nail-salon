@@ -55,13 +55,6 @@ export function Nav() {
             })}
           </nav>
 
-          <Link
-            href="/contact"
-            className="hidden rounded-full bg-charcoal px-6 py-2.5 text-xs uppercase tracking-wide2 text-warm-white transition-colors hover:bg-black-soft md:inline-block"
-          >
-            Book Appointment
-          </Link>
-
           <button
             aria-label="Menu"
             onClick={() => setOpen(!open)}

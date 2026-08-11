@@ -4,7 +4,6 @@ import { Footer } from "@/components/xpressnails/footer";
 import { Container } from "@/components/ui/container";
 import { FadeIn } from "@/components/ui/fade-in";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
-import { ContactForm } from "@/components/xpressnails/contact/contact-form";
 import { StoreMap } from "@/components/xpressnails/contact/store-map";
 
 const ADDRESS = "3605 Sandy Plains Rd, Marietta, GA 30066";
@@ -27,8 +26,7 @@ export default function ContactPage() {
                 Let&rsquo;s find you a time.
               </h1>
               <p className="mt-6 max-w-lg text-base font-light leading-relaxed text-charcoal/55">
-                Send a note below or call the studio directly — we typically reply within a
-                business day.
+                Call or stop by — we&rsquo;d love to help you find your next appointment.
               </p>
             </FadeIn>
           </Container>
@@ -36,11 +34,7 @@ export default function ContactPage() {
 
         <section className="pb-20 sm:pb-28">
           <Container className="grid gap-16 lg:grid-cols-2 lg:gap-20">
-            <FadeIn>
-              <ContactForm />
-            </FadeIn>
-
-            <FadeIn delay={0.1} className="space-y-10">
+            <FadeIn className="space-y-10">
               <div>
                 <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Hours</p>
                 <ul className="mt-3 space-y-1.5 text-sm font-light text-charcoal/70">
@@ -70,7 +64,9 @@ export default function ContactPage() {
                   <a href="https://www.facebook.com/NailXpressMarietta" target="_blank" rel="noopener noreferrer" className="hover:text-charcoal">Facebook</a>
                 </div>
               </div>
+            </FadeIn>
 
+            <FadeIn delay={0.1}>
               <StoreMap address={ADDRESS} />
             </FadeIn>
           </Container>
