@@ -1,76 +1,111 @@
-export type Service = {
+export type ServiceItem = {
   name: string;
   price: string;
-  duration?: string;
   description?: string;
 };
 
 export type ServiceCategory = {
   slug: string;
   name: string;
-  intro: string;
-  services: Service[];
+  services: ServiceItem[];
+  addOnsLabel?: string;
+  addOns?: ServiceItem[];
+  disclaimer?: string;
 };
 
 export const serviceCategories: ServiceCategory[] = [
   {
-    slug: "manicure",
-    name: "Manicure",
-    intro: "Classic hand care, refined.",
+    slug: "manicures",
+    name: "Manicures",
     services: [
-      { name: "Signature Manicure", price: "$38", duration: "45 min", description: "Shape, cuticle work, hand massage, polish." },
-      { name: "Express Manicure", price: "$25", duration: "25 min", description: "A quick shape, buff, and polish." },
-      { name: "Paraffin Hand Treatment", price: "$48", duration: "55 min", description: "Deep-conditioning warm paraffin dip." },
+      { name: "Classic Manicure", price: "$25" },
+      { name: "Deluxe Manicure", price: "$35" },
+      { name: "Gel Manicure", price: "$40" },
+      { name: "French Gel Manicure", price: "$45" },
+      { name: "SNS/Dipping Manicure", price: "$45" },
+      { name: "SNS French Manicure", price: "$50" },
+      { name: "SNS Ombre Manicure", price: "$60" },
     ],
   },
   {
-    slug: "pedicure",
-    name: "Pedicure",
-    intro: "Slow down, feet first.",
+    slug: "pedicures",
+    name: "Pedicures",
     services: [
-      { name: "Signature Pedicure", price: "$55", duration: "50 min", description: "Soak, exfoliation, extended massage, polish." },
-      { name: "Express Pedicure", price: "$40", duration: "30 min", description: "Shape, buff, and polish." },
-      { name: "Deluxe Spa Pedicure", price: "$75", duration: "70 min", description: "Sugar scrub, warm stone massage, mask." },
+      {
+        name: "Classic Pedicure",
+        price: "$35",
+        description:
+          "Includes nail trimming, shaping, cuticle grooming, follow-up with exfoliating scrub and massaging lotion. Finish with polish of choice.",
+      },
+      {
+        name: "Dream Pedicure",
+        price: "$45",
+        description:
+          "Contains upgraded callus treatment, hydrating mud masque wrapped in hot towels to revive and preserve skin moisturizer.",
+      },
+      {
+        name: "Royal Pedicure",
+        price: "$55",
+        description:
+          "Combines skin-focus glimmer spa product with hot stone massage to enrich hydration and enhance blood circulation.",
+      },
+      {
+        name: "Lux Pedicure",
+        price: "$70",
+        description:
+          "Uses top-of-the-line organic collagen products with paraffin wax, hot stone massage, and hydrating serum to rejuvenate skin and muscles.",
+      },
     ],
   },
   {
-    slug: "gel",
-    name: "Gel",
-    intro: "Long-wear shine, no compromise.",
+    slug: "acrylic",
+    name: "Acrylic",
     services: [
-      { name: "Gel Manicure", price: "$50", duration: "50 min" },
-      { name: "Gel Pedicure", price: "$65", duration: "55 min" },
-      { name: "Gel Removal", price: "$15", duration: "20 min" },
+      { name: "Full Set", price: "$40" },
+      { name: "Fill-in", price: "$30" },
+      { name: "Gel Full Set", price: "$57" },
+      { name: "Gel Fill-in", price: "$47" },
+      { name: "Gel-X Full Set", price: "$65" },
+      { name: "Builder Gel Full Set", price: "$55" },
+      { name: "Ombre Full Set", price: "$75" },
+      { name: "Pink & White Full Set", price: "$65" },
+      { name: "Pink & White Fill-in", price: "$55" },
+    ],
+    addOnsLabel: "Add-Ons",
+    addOns: [
+      { name: "Extension Tip / Special Shape", price: "$5" },
+      { name: "Gel Finish", price: "$17" },
+    ],
+    disclaimer: "Design prices may vary. Please consult your technician for details.",
+  },
+  {
+    slug: "kids",
+    name: "Kids",
+    services: [
+      { name: "Manicure", price: "$15" },
+      { name: "Pedicure", price: "$25" },
     ],
   },
   {
-    slug: "dip-powder",
-    name: "Dip Powder",
-    intro: "Strength with a soft-matte finish.",
+    slug: "polish-changes",
+    name: "Polish Changes",
     services: [
-      { name: "Dip Powder Manicure", price: "$55", duration: "55 min" },
-      { name: "Dip Powder Overlay", price: "$45", duration: "40 min" },
-      { name: "Dip Powder Removal", price: "$15", duration: "20 min" },
+      { name: "Gel Polish", price: "$25" },
+      { name: "Regular Polish", price: "$15" },
     ],
   },
   {
-    slug: "nail-art",
-    name: "Nail Art",
-    intro: "Considered detail, by request.",
+    slug: "waxing",
+    name: "Waxing",
     services: [
-      { name: "Simple Accent (per nail)", price: "$4", },
-      { name: "Hand-Painted Design (per nail)", price: "$8" },
-      { name: "Full Set Custom Art", price: "from $30" },
-    ],
-  },
-  {
-    slug: "spa-treatments",
-    name: "Spa Treatments",
-    intro: "Beyond the polish.",
-    services: [
-      { name: "Hot Stone Hand & Arm Massage", price: "$35", duration: "30 min" },
-      { name: "Callus Peel Treatment", price: "$30", duration: "25 min" },
-      { name: "Hydrating Foot Mask", price: "$20", duration: "20 min" },
+      { name: "Eyebrows / Chin", price: "$15" },
+      { name: "Lips", price: "$10" },
+      { name: "Brow Tinting", price: "$25" },
+      { name: "Full Arms", price: "$35" },
+      { name: "Half Arms", price: "$25" },
+      { name: "Full Legs", price: "$45" },
+      { name: "Half Legs", price: "$30" },
+      { name: "Full Face", price: "$40" },
     ],
   },
 ];

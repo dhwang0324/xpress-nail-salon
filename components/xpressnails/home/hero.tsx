@@ -58,8 +58,8 @@ export function Hero() {
             <span>Book Appointment</span>
             <span className="transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
           </Link>
-          <Link href="/menu" className="text-xs uppercase tracking-wide2 text-warm-white/70 hover:text-warm-white">
-            View the Menu
+          <Link href="/services" className="text-xs uppercase tracking-wide2 text-warm-white/70 hover:text-warm-white">
+            View Services
           </Link>
         </motion.div>
       </motion.div>

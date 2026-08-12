@@ -6,9 +6,9 @@ import { FadeIn } from "@/components/ui/fade-in";
 import type { PlaceholderTone } from "@/components/ui/image-placeholder";
 
 const featured: { name: string; price: string; tone: PlaceholderTone; href: string }[] = [
-  { name: "Signature Manicure", price: "$38", tone: "stone", href: "/menu#manicure" },
-  { name: "Deluxe Spa Pedicure", price: "$75", tone: "beige", href: "/menu#pedicure" },
-  { name: "Hand-Painted Nail Art", price: "$8/nail", tone: "taupe", href: "/menu#nail-art" },
+  { name: "Gel Manicure", price: "$40", tone: "stone", href: "/services#manicures" },
+  { name: "Royal Pedicure", price: "$55", tone: "beige", href: "/services#pedicures" },
+  { name: "Ombre Full Set", price: "$75", tone: "taupe", href: "/services#acrylic" },
 ];
 
 export function FeaturedServices() {
@@ -17,8 +17,8 @@ export function FeaturedServices() {
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-8">
           <SectionHeading eyebrow="Featured Services" title="A few favorites to begin with." />
-          <Link href="/menu" className="text-xs uppercase tracking-wide2 text-charcoal/50 hover:text-charcoal">
-            View Full Menu &rarr;
+          <Link href="/services" className="text-xs uppercase tracking-wide2 text-charcoal/50 hover:text-charcoal">
+            View All Services &rarr;
           </Link>
         </div>
 

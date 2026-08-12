@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 
@@ -6,9 +7,7 @@ export function Footer() {
     <footer className="border-t border-charcoal/10 bg-cream">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <p className="font-sans text-xl font-medium uppercase tracking-wide3">
-            Xpress Spa &amp; Nails
-          </p>
+          <Image src="/media/logo.png" alt="Xpress Nails" width={239} height={100} className="h-9 w-auto" />
           <p className="mt-4 max-w-xs text-sm font-light leading-relaxed text-charcoal/55">
             A quiet, considered space for hands and feet — nail care treated as ritual, not routine.
           </p>
@@ -17,7 +16,7 @@ export function Footer() {
         <div>
           <p className="text-xs uppercase tracking-wide2 text-charcoal/40">Explore</p>
           <ul className="mt-4 space-y-2.5 text-sm text-charcoal/65">
-            <li><Link href="/menu" className="hover:text-charcoal">Menu</Link></li>
+            <li><Link href="/services" className="hover:text-charcoal">Services</Link></li>
             <li><Link href="/gallery" className="hover:text-charcoal">Gallery</Link></li>
             <li><Link href="/contact" className="hover:text-charcoal">Contact</Link></li>
           </ul>

@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/ui/container";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Menu", href: "/menu" },
+  { label: "Services", href: "/services" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
@@ -34,8 +35,15 @@ export function Nav() {
         }`}
       >
         <Container className="flex items-center justify-between py-5">
-          <Link href="/" className="font-sans text-xl font-medium uppercase tracking-wide3 text-charcoal">
-            Xpress Spa &amp; Nails
+          <Link href="/" className="block">
+            <Image
+              src="/media/logo.png"
+              alt="Xpress Nails"
+              width={239}
+              height={100}
+              className="h-9 w-auto"
+              priority
+            />
           </Link>
 
           <nav className="hidden items-center gap-10 md:flex">
