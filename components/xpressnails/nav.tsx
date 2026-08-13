@@ -34,14 +34,14 @@ export function Nav() {
             : "bg-transparent"
         }`}
       >
-        <Container className="flex items-center justify-between py-5">
+        <Container className="flex items-center justify-between py-4">
           <Link href="/" className="block">
             <Image
               src="/media/logo.png"
-              alt="Xpress Nails"
+              alt="Nail Xpress"
               width={239}
               height={100}
-              className="h-9 w-auto"
+              className="h-11 w-auto"
               priority
             />
           </Link>

@@ -18,9 +18,9 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Xpress Spa & Nails | Luxury Nail Studio",
+  title: "Nail Xpress | Luxury Nail Studio",
   description:
-    "A quiet, considered space for hands and feet. Manicure, pedicure, gel, dip powder, nail art, and spa treatments — reimagined as a luxury ritual.",
+    "A quiet, considered space for hands and feet. Manicures, pedicures, acrylic, and more — reimagined as a luxury ritual.",
 };
 
 export default function RootLayout({

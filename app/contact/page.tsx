@@ -9,7 +9,7 @@ import { StoreMap } from "@/components/xpressnails/contact/store-map";
 const ADDRESS = "3605 Sandy Plains Rd, Marietta, GA 30066";
 
 export const metadata: Metadata = {
-  title: "Contact | Xpress Spa & Nails",
+  title: "Contact | Nail Xpress",
   description: "Book an appointment, get directions, or reach the studio directly.",
 };
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
                 label="Lifestyle Photography"
                 sublabel="Studio entrance or reception, wide format"
                 src="/media/contact-storefront.jpg"
-                alt="Xpress Spa & Nails storefront"
+                alt="Nail Xpress storefront"
                 aspect="aspect-[21/9]"
                 tone="beige"
                 rounded="rounded-[2rem]"

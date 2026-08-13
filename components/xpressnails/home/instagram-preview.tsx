@@ -10,7 +10,7 @@ export function InstagramPreview() {
   return (
     <section className="bg-cream py-24 sm:py-32">
       <Container>
-        <SectionHeading eyebrow="Follow Along" title="@xpressspaandnails" align="center" />
+        <SectionHeading eyebrow="Follow Along" title="@nailxpressmarietta" align="center" />
 
         <div className="mt-14 grid grid-cols-3 gap-4 sm:grid-cols-6">
           {tones.map((tone, i) => (

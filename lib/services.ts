@@ -79,14 +79,6 @@ export const serviceCategories: ServiceCategory[] = [
     disclaimer: "Design prices may vary. Please consult your technician for details.",
   },
   {
-    slug: "kids",
-    name: "Kids",
-    services: [
-      { name: "Manicure", price: "$15" },
-      { name: "Pedicure", price: "$25" },
-    ],
-  },
-  {
     slug: "polish-changes",
     name: "Polish Changes",
     services: [
@@ -106,6 +98,14 @@ export const serviceCategories: ServiceCategory[] = [
       { name: "Full Legs", price: "$45" },
       { name: "Half Legs", price: "$30" },
       { name: "Full Face", price: "$40" },
+    ],
+  },
+  {
+    slug: "kids",
+    name: "Kids",
+    services: [
+      { name: "Manicure", price: "$15" },
+      { name: "Pedicure", price: "$25" },
     ],
   },
 ];

@@ -42,8 +42,8 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.35 }}
           className="mt-3 max-w-3xl font-sans text-6xl font-extralight leading-[0.98] tracking-tight text-warm-white sm:text-7xl lg:text-8xl"
         >
-          Xpress Spa
-          <br />&amp; Nails
+          Nail
+          <br />Xpress
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 16 }}

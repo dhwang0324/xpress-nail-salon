@@ -9,7 +9,7 @@ import { BeforeAfter } from "@/components/xpressnails/gallery/before-after";
 import type { PlaceholderTone } from "@/components/ui/image-placeholder";
 
 export const metadata: Metadata = {
-  title: "Gallery | Xpress Spa & Nails",
+  title: "Gallery | Nail Xpress",
   description: "Interior, nail work, and lifestyle photography from the studio.",
 };
 

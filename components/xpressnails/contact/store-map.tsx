@@ -4,7 +4,7 @@ export function StoreMap({ address }: { address: string }) {
   return (
     <div className="relative aspect-[16/10] overflow-hidden rounded-[2rem]">
       <iframe
-        title="Xpress Spa & Nails location"
+        title="Nail Xpress location"
         src={`https://www.google.com/maps?q=${query}&output=embed`}
         className="absolute inset-0 h-full w-full grayscale-[15%]"
         style={{ border: 0 }}

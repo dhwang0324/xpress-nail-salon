@@ -7,7 +7,7 @@ import { CategoryTabs } from "@/components/xpressnails/services/category-tabs";
 import { serviceCategories } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: "Services | Xpress Spa & Nails",
+  title: "Services | Nail Xpress",
   description: "Manicures, pedicures, acrylic, kids' services, polish changes, and waxing.",
 };
 

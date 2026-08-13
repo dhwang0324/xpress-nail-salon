@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-charcoal/10 bg-cream">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Image src="/media/logo.png" alt="Xpress Nails" width={239} height={100} className="h-9 w-auto" />
+          <Image src="/media/logo.png" alt="Nail Xpress" width={239} height={100} className="h-11 w-auto" />
           <p className="mt-4 max-w-xs text-sm font-light leading-relaxed text-charcoal/55">
             A quiet, considered space for hands and feet — nail care treated as ritual, not routine.
           </p>
@@ -41,7 +41,7 @@ export function Footer() {
       </Container>
 
       <div className="border-t border-charcoal/10 py-6 text-center text-xs text-charcoal/40">
-        &copy; {new Date().getFullYear()} Xpress Spa &amp; Nails. All rights reserved.
+        &copy; {new Date().getFullYear()} Nail Xpress. All rights reserved.
       </div>
     </footer>
   );

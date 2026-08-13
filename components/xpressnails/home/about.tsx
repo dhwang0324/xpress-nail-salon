@@ -12,7 +12,7 @@ export function About() {
             label="Interior Salon Image"
             sublabel="Wide shot of the studio, natural light preferred"
             src="/media/home-about-interior.jpg"
-            alt="Nail technician caring for a client's hands at Xpress Spa & Nails"
+            alt="Nail technician caring for a client's hands at Nail Xpress"
             aspect="aspect-[4/5]"
             tone="stone"
           />
@@ -22,7 +22,7 @@ export function About() {
           <SectionHeading
             eyebrow="Our Philosophy"
             title="Care, considered down to the last detail."
-            description="Xpress Spa &amp; Nails was built on a simple idea: that a manicure appointment can be a moment of genuine calm, not just a transaction. Every surface, tool, and gesture in our studio is chosen with the same restraint and warmth you'd expect from a boutique hotel."
+            description="At Nail Xpress, we believe your visit should be more than just an appointment. It's a chance to slow down, relax, and leave feeling refreshed. From the moment you walk in to the finishing touch, we're here to make every visit comfortable, welcoming, and beautifully done."
           />
           <FadeIn delay={0.15} className="mt-8 grid grid-cols-2 gap-8 border-t border-charcoal/10 pt-8">
             <div>
