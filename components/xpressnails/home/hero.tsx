@@ -17,7 +17,7 @@ export function Hero() {
         <ImagePlaceholder
           label="Hero Image Placeholder"
           sublabel="Full-bleed salon / hands photography, 16:9 or taller"
-          src="/media/home-hero-nails-closeup-v2.jpg"
+          src="/media/salon-hero-photo.jpg"
           alt="Close-up of a manicured hand with neutral nail polish"
           aspect="aspect-auto h-full"
           rounded="rounded-none"
