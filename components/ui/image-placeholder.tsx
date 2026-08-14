@@ -26,6 +26,7 @@ export function ImagePlaceholder({
   tone = "stone",
   rounded = "rounded-[2rem]",
   className = "",
+  objectPosition = "50% 50%",
 }: {
   label: string;
   sublabel?: string;
@@ -35,11 +36,12 @@ export function ImagePlaceholder({
   tone?: PlaceholderTone;
   rounded?: string;
   className?: string;
+  objectPosition?: string;
 }) {
   if (src) {
     return (
       <div className={`relative overflow-hidden ${aspect} ${rounded} ${className}`}>
-        <Image src={src} alt={alt} fill className="object-cover" />
+        <Image src={src} alt={alt} fill className="object-cover" style={{ objectPosition }} />
       </div>
     );
   }
