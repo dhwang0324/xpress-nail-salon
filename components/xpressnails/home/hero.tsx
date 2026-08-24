@@ -24,11 +24,12 @@ export function Hero() {
           tone="beige"
           className="h-full w-full"
           objectPosition="100% 15%"
+          mobileObjectPosition="70% 15%"
         />
       </motion.div>
       <div className="absolute inset-0 bg-gradient-to-t from-black-soft/55 via-black-soft/10 to-transparent" />
 
-      <motion.div style={{ opacity }} className="relative z-10 w-full pr-6 pb-16 pl-16 sm:pr-8 sm:pb-24 sm:pl-24">
+      <motion.div style={{ opacity }} className="relative z-10 w-full px-6 pb-16 sm:px-8 sm:pb-24">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}

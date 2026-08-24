@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export type PlaceholderTone = "stone" | "beige" | "taupe" | "charcoal";
 
@@ -27,6 +28,7 @@ export function ImagePlaceholder({
   rounded = "rounded-[2rem]",
   className = "",
   objectPosition = "50% 50%",
+  mobileObjectPosition,
 }: {
   label: string;
   sublabel?: string;
@@ -37,11 +39,24 @@ export function ImagePlaceholder({
   rounded?: string;
   className?: string;
   objectPosition?: string;
+  mobileObjectPosition?: string;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (!mobileObjectPosition) return;
+    const query = window.matchMedia("(max-width: 639px)");
+    const update = () => setIsMobile(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, [mobileObjectPosition]);
+
   if (src) {
+    const position = isMobile && mobileObjectPosition ? mobileObjectPosition : objectPosition;
     return (
       <div className={`relative overflow-hidden ${aspect} ${rounded} ${className}`}>
-        <Image src={src} alt={alt} fill className="object-cover" style={{ objectPosition }} />
+        <Image src={src} alt={alt} fill className="object-cover" style={{ objectPosition: position }} />
       </div>
     );
   }
