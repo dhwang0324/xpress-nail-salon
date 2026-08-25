@@ -4,23 +4,27 @@ import { Footer } from "@/components/xpressnails/footer";
 import { Container } from "@/components/ui/container";
 import { FadeIn } from "@/components/ui/fade-in";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
-import type { PlaceholderTone } from "@/components/ui/image-placeholder";
 
 export const metadata: Metadata = {
   title: "Gallery | Nail Xpress",
   description: "Photos from the studio and our nail work.",
 };
 
-const photos: { label: string; tone: PlaceholderTone; aspect: string }[] = [
-  { label: "Nail Work Close-up", tone: "stone", aspect: "aspect-[3/4]" },
-  { label: "Interior Salon Image", tone: "beige", aspect: "aspect-square" },
-  { label: "Nail Work Close-up", tone: "taupe", aspect: "aspect-[4/5]" },
-  { label: "Lifestyle Photography", tone: "stone", aspect: "aspect-square" },
-  { label: "Nail Work Close-up", tone: "beige", aspect: "aspect-[3/4]" },
-  { label: "Interior Salon Image", tone: "taupe", aspect: "aspect-[4/5]" },
-  { label: "Nail Work Close-up", tone: "stone", aspect: "aspect-square" },
-  { label: "Lifestyle Photography", tone: "beige", aspect: "aspect-[3/4]" },
-  { label: "Nail Work Close-up", tone: "taupe", aspect: "aspect-square" },
+const photos = [
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-1.jpg", aspect: "aspect-[3/4]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-2.jpg", aspect: "aspect-[3/4]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-1.jpg", aspect: "aspect-[3/2]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-3.jpg", aspect: "aspect-[3/4]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-4.jpg", aspect: "aspect-[4/5]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-2.jpg", aspect: "aspect-[3/2]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-5.jpg", aspect: "aspect-[2/3]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-6.jpg", aspect: "aspect-[4/5]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-3.jpg", aspect: "aspect-[3/2]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-7.jpg", aspect: "aspect-[4/5]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-8.jpg", aspect: "aspect-[4/5]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-4.jpg", aspect: "aspect-[3/2]" },
+  { label: "Nail Work Close-up", src: "/media/gallery-nail-9.jpg", aspect: "aspect-[3/5]" },
+  { label: "Interior Salon Image", src: "/media/store-reception.jpg", aspect: "aspect-[3/2]" },
 ];
 
 export default function GalleryPage() {
@@ -36,7 +40,7 @@ export default function GalleryPage() {
                 A studio built to be photographed.
               </h1>
               <p className="mt-6 max-w-lg text-base font-light leading-relaxed text-charcoal/55">
-                Every frame below is a placeholder, ready to be swapped for real photography.
+                A closer look at our nail work and the studio itself.
               </p>
             </FadeIn>
           </Container>
@@ -46,8 +50,14 @@ export default function GalleryPage() {
           <Container>
             <div className="columns-2 gap-4 sm:columns-3 sm:gap-6 [&>*]:mb-4 sm:[&>*]:mb-6">
               {photos.map((photo, i) => (
-                <FadeIn key={i} delay={(i % 3) * 0.08}>
-                  <ImagePlaceholder label={photo.label} tone={photo.tone} aspect={photo.aspect} rounded="rounded-xl" />
+                <FadeIn key={photo.src} delay={(i % 3) * 0.08}>
+                  <ImagePlaceholder
+                    label={photo.label}
+                    src={photo.src}
+                    alt={photo.label}
+                    aspect={photo.aspect}
+                    rounded="rounded-xl"
+                  />
                 </FadeIn>
               ))}
             </div>

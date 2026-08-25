@@ -2,9 +2,14 @@ import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { FadeIn } from "@/components/ui/fade-in";
-import type { PlaceholderTone } from "@/components/ui/image-placeholder";
 
-const tones: PlaceholderTone[] = ["stone", "beige", "taupe", "stone", "beige", "taupe"];
+const posts = [
+  "/media/insta-1.jpg",
+  "/media/insta-2.jpg",
+  "/media/insta-3.jpg",
+  "/media/insta-4.jpg",
+  "/media/insta-5.jpg",
+];
 
 export function InstagramPreview() {
   return (
@@ -12,10 +17,16 @@ export function InstagramPreview() {
       <Container>
         <SectionHeading eyebrow="Follow Along" title="@nailxpressmarietta" align="center" />
 
-        <div className="mt-14 grid grid-cols-3 gap-4 sm:grid-cols-6">
-          {tones.map((tone, i) => (
-            <FadeIn key={i} delay={i * 0.05}>
-              <ImagePlaceholder label="Instagram" tone={tone} aspect="aspect-square" rounded="rounded-xl" />
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-5">
+          {posts.map((src, i) => (
+            <FadeIn key={src} delay={i * 0.05} className={i === 4 ? "col-span-2 sm:col-span-1" : ""}>
+              <ImagePlaceholder
+                label="Instagram"
+                src={src}
+                alt="Nail Xpress Instagram post"
+                aspect="aspect-square"
+                rounded="rounded-xl"
+              />
             </FadeIn>
           ))}
         </div>

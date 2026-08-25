@@ -24,10 +24,14 @@ export function About() {
             title="Care, considered down to the last detail."
             description="At Nail Xpress, we believe your visit should be more than just an appointment. It's a chance to slow down, relax, and leave feeling refreshed. From the moment you walk in to the finishing touch, we're here to make every visit comfortable, welcoming, and beautifully done."
           />
-          <FadeIn delay={0.15} className="mt-8 grid grid-cols-2 gap-8 border-t border-charcoal/10 pt-8">
+          <FadeIn delay={0.15} className="mt-8 grid grid-cols-3 gap-8 border-t border-charcoal/10 pt-8">
             <div>
-              <p className="font-sans text-3xl font-extralight">12+</p>
-              <p className="mt-1 text-xs uppercase tracking-wide2 text-charcoal/45">Years of craft</p>
+              <p className="font-sans text-3xl font-extralight">8+</p>
+              <p className="mt-1 text-xs uppercase tracking-wide2 text-charcoal/45">Years of experience</p>
+            </div>
+            <div>
+              <p className="font-sans text-3xl font-extralight">100+</p>
+              <p className="mt-1 text-xs uppercase tracking-wide2 text-charcoal/45">Satisfied customers</p>
             </div>
             <div>
               <p className="font-sans text-3xl font-extralight">100%</p>
