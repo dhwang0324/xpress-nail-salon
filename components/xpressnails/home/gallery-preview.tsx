@@ -6,9 +6,9 @@ import { FadeIn } from "@/components/ui/fade-in";
 
 const items = [
   { label: "Interior Salon Image", src: "/media/store-interior-1.jpg", span: "sm:row-span-2" },
-  { label: "Nail Work Close-up", src: "/media/gallery-nail-4.jpg" },
-  { label: "Nail Work Close-up", src: "/media/gallery-nail-6.jpg" },
-  { label: "Nail Work Close-up", src: "/media/gallery-nail-8.jpg" },
+  { label: "Interior Salon Image", src: "/media/store-interior-2.jpg" },
+  { label: "Interior Salon Image", src: "/media/store-interior-3.jpg" },
+  { label: "Interior Salon Image", src: "/media/store-reception.jpg" },
 ];
 
 export function GalleryPreview() {

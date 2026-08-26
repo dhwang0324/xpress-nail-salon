@@ -41,7 +41,7 @@ export function Footer() {
       </Container>
 
       <div className="border-t border-charcoal/10 py-6 text-center text-xs text-charcoal/40">
-        &copy; {new Date().getFullYear()} Nail Xpress. All rights reserved.
+        &copy; {new Date().getFullYear()} Nail Xpress. All rights reserved. Developed and designed by Solace.
       </div>
     </footer>
   );

@@ -7,7 +7,7 @@ import { FadeIn } from "@/components/ui/fade-in";
 const featured = [
   { name: "Gel Manicure", price: "$40", src: "/media/gallery-nail-3.jpg", href: "/services#manicures" },
   { name: "Royal Pedicure", price: "$55", src: "/media/gallery-nail-5.jpg", href: "/services#pedicures" },
-  { name: "Ombre Full Set", price: "$75", src: "/media/gallery-nail-9.jpg", href: "/services#acrylic" },
+  { name: "Ombre Full Set", price: "$75", src: "/media/gallery-nail-7.jpg", href: "/services#acrylic" },
 ];
 
 export function FeaturedServices() {

@@ -13,17 +13,17 @@ export const metadata: Metadata = {
 const photos = [
   { label: "Nail Work Close-up", src: "/media/gallery-nail-1.jpg", aspect: "aspect-[3/4]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-2.jpg", aspect: "aspect-[3/4]" },
-  { label: "Interior Salon Image", src: "/media/store-interior-1.jpg", aspect: "aspect-[3/2]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-3.jpg", aspect: "aspect-[3/4]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-4.jpg", aspect: "aspect-[4/5]" },
-  { label: "Interior Salon Image", src: "/media/store-interior-2.jpg", aspect: "aspect-[3/2]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-5.jpg", aspect: "aspect-[2/3]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-6.jpg", aspect: "aspect-[4/5]" },
-  { label: "Interior Salon Image", src: "/media/store-interior-3.jpg", aspect: "aspect-[3/2]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-7.jpg", aspect: "aspect-[4/5]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-8.jpg", aspect: "aspect-[4/5]" },
-  { label: "Interior Salon Image", src: "/media/store-interior-4.jpg", aspect: "aspect-[3/2]" },
   { label: "Nail Work Close-up", src: "/media/gallery-nail-9.jpg", aspect: "aspect-[3/5]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-1.jpg", aspect: "aspect-[3/2]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-2.jpg", aspect: "aspect-[3/2]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-3.jpg", aspect: "aspect-[3/2]" },
+  { label: "Interior Salon Image", src: "/media/store-interior-4.jpg", aspect: "aspect-[3/2]" },
   { label: "Interior Salon Image", src: "/media/store-reception.jpg", aspect: "aspect-[3/2]" },
 ];
 

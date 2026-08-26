@@ -1,5 +1,4 @@
 import { Container } from "@/components/ui/container";
-import { SectionHeading } from "@/components/ui/section-heading";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { FadeIn } from "@/components/ui/fade-in";
 
@@ -15,7 +14,19 @@ export function InstagramPreview() {
   return (
     <section className="bg-cream py-24 sm:py-32">
       <Container>
-        <SectionHeading eyebrow="Follow Along" title="@nailxpressmarietta" align="center" />
+        <FadeIn className="text-center">
+          <p className="eyebrow">Follow Along</p>
+          <h2 className="mt-4 font-sans text-4xl font-extralight leading-[1.1] tracking-tight text-charcoal sm:text-5xl">
+            <a
+              href="https://www.instagram.com/nailxpressmarietta/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-taupe-dark"
+            >
+              @nailxpressmarietta
+            </a>
+          </h2>
+        </FadeIn>
 
         <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-5">
           {posts.map((src, i) => (
