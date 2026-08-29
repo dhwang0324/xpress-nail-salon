@@ -8,6 +8,7 @@ const items = [
   { label: "Interior Salon Image", src: "/media/store-interior-1.jpg", span: "sm:row-span-2" },
   { label: "Interior Salon Image", src: "/media/store-interior-2.jpg" },
   { label: "Interior Salon Image", src: "/media/store-interior-3.jpg" },
+  { label: "Interior Salon Image", src: "/media/store-interior-4.jpg" },
   { label: "Interior Salon Image", src: "/media/store-reception.jpg" },
 ];
 

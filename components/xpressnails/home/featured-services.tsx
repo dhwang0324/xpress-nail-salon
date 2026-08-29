@@ -5,9 +5,9 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { FadeIn } from "@/components/ui/fade-in";
 
 const featured = [
-  { name: "Gel Manicure", price: "$40", src: "/media/gallery-nail-3.jpg", href: "/services#manicures" },
-  { name: "Royal Pedicure", price: "$55", src: "/media/gallery-nail-5.jpg", href: "/services#pedicures" },
-  { name: "Ombre Full Set", price: "$75", src: "/media/gallery-nail-7.jpg", href: "/services#acrylic" },
+  { name: "Gel Manicure", src: "/media/gallery-nail-3.jpg", href: "/services#manicures" },
+  { name: "Royal Pedicure", src: "/media/gallery-nail-5.jpg", href: "/services#pedicures" },
+  { name: "Ombre Full Set", src: "/media/gallery-nail-7.jpg", href: "/services#acrylic" },
 ];
 
 export function FeaturedServices() {
@@ -33,10 +33,6 @@ export function FeaturedServices() {
                   aspect="aspect-[3/4]"
                   className="transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-                <div className="mt-4 flex items-center justify-between">
-                  <p className="font-sans text-base font-light">{s.name}</p>
-                  <p className="text-sm text-charcoal/50">{s.price}</p>
-                </div>
               </Link>
             </FadeIn>
           ))}

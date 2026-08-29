@@ -30,7 +30,7 @@ export function About() {
               <p className="mt-1 text-xs uppercase tracking-wide2 text-charcoal/45">Years of experience</p>
             </div>
             <div>
-              <p className="font-sans text-3xl font-extralight">100+</p>
+              <p className="font-sans text-3xl font-extralight">50+</p>
               <p className="mt-1 text-xs uppercase tracking-wide2 text-charcoal/45">Satisfied customers</p>
             </div>
             <div>
