@@ -23,14 +23,14 @@ export function GalleryPreview() {
           </Link>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-3 sm:grid-rows-2">
+        <div className="mt-14 grid gap-6 sm:aspect-[3/2] sm:grid-cols-3 sm:grid-rows-2">
           {items.map((item, i) => (
             <FadeIn key={item.src} delay={i * 0.08} className={item.span}>
               <ImagePlaceholder
                 label={item.label}
                 src={item.src}
                 alt={item.label}
-                aspect={item.span ? "aspect-[3/5] sm:h-full" : "aspect-[4/3]"}
+                aspect="aspect-[4/3] sm:aspect-auto sm:h-full"
                 className="h-full"
               />
             </FadeIn>
