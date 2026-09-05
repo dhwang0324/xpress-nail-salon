@@ -11,14 +11,14 @@ const quotes = [
   },
   {
     quote:
-      "Yesterday made my day! Kelly and another man did my nails. They came out perfect. Im going to the or parade and im so satisfied. It was my first time going and it won't be my last. See you soon",
-    name: "Marisella",
+      "New owner, newly renovated beautiful interior. I had the pedicure and manicure done today and they did not disappoint. Their prices are reasonable, they're not pushy but suggestive to what would work for you. I recommend Donna and her colleague (forgot name) both very professionals, They don't rush, they took their time to do my nails and made sure I was satisfied with their work.",
+    name: "Juveria K.",
     rating: 5,
   },
   {
     quote:
-      "I had an amazing experience at this nail salon! The service was truly exceptional from start to finish. Kelly, my nail technician, was absolutely fantastic. She was not only professional and skilled, but also incredibly attentive and kind.",
-    name: "Ansleigh Gregory",
+      "This salon is a hidden gem. Great location, clean, bright, recently renovated and expanded with beautiful, upscale interior and luxurious chairs. Huge selection of colors and services. Relaxing experience. They taken “getting your nails done” to a new level.",
+    name: "Nell Roney",
     rating: 5,
   },
 ];
