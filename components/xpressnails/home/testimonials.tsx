@@ -11,7 +11,7 @@ const quotes = [
   },
   {
     quote:
-      "New owner, newly renovated beautiful interior. I had the pedicure and manicure done today and they did not disappoint. Their prices are reasonable, they're not pushy but suggestive to what would work for you. I recommend Donna and her colleague (forgot name) both very professionals, They don't rush, they took their time to do my nails and made sure I was satisfied with their work.",
+      "New owner, newly renovated beautiful interior. I had the pedicure and manicure done today and they did not disappoint. Their prices are reasonable, they're not pushy but suggestive to what would work for you.",
     name: "Juveria K.",
     rating: 5,
   },
