@@ -122,7 +122,7 @@ All media is in `public/media/` and is referenced by path (`/media/...`) directl
 | `insta-1.jpg` … `insta-5.jpg` | Home Instagram strip |
 | `contact-storefront.jpg` (2400×1600) | Contact page |
 
-There is no favicon file and no video.
+The favicon is `app/icon.png` (512×512): the header logo centered on a transparent square. Next.js adds the `<link rel="icon">` tag from this file automatically. If the logo changes, regenerate it from `public/media/logo.png`. There is no video.
 
 ### Contact details currently on the site
 
